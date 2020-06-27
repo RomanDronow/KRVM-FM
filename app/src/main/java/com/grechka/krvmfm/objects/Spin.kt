@@ -1,9 +1,22 @@
 package com.grechka.krvmfm.objects
 
+import com.google.gson.annotations.*
+
 data class Spin(
-    val i: String,
-    val a: String,
-    val s: String,
-    val r: String,
-    val t: String,
-    val img: String)
+    @SerializedName("i")
+    val id: String,
+
+    @SerializedName("a")
+    val artist: String,
+
+    @SerializedName("s")
+    val song: String,
+
+    @SerializedName("r")
+    val release: String,
+
+    @SerializedName("t")
+    val time: String,
+
+    val img: String
+)
