@@ -43,10 +43,10 @@ class SpinsListAdapter(private val items: KProperty0<ArrayList<String>>) :
         }
 
         fun bind(spin: Spin) {
-            textViewArtist?.text = spin.a
-            textViewSong?.text = spin.s
-            textViewAlbum?.text = spin.r
-            textViewTime?.text = spin.t
+            textViewArtist?.text = spin.artist
+            textViewSong?.text = spin.song
+            textViewAlbum?.text = spin.release
+            textViewTime?.text = spin.time
             textViewImg?.text = spin.img
         }
     }
