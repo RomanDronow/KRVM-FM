@@ -1,6 +1,7 @@
 package com.grechka.krvmfm.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,6 +24,7 @@ class QueueFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         fillPlaylist()
+        Log.d("array size: ", listForView.size.toString())
     }
 
     override fun onCreateView(

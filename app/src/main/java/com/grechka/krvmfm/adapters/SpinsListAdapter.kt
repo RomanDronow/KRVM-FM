@@ -38,7 +38,6 @@ class SpinsListAdapter(private val items: KProperty0<ArrayList<String>>) :
         init {
             textViewArtist = itemView?.findViewById(R.id.item_artist)
             textViewSong = itemView?.findViewById(R.id.item_song)
-            textViewAlbum = itemView?.findViewById(R.id.item_album)
             textViewTime = itemView?.findViewById(R.id.item_time)
         }
 
